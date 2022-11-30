@@ -1,17 +1,183 @@
-<!DOCTYPE html> 
-<html>    
-    <head>        
-        <title>Page Title</title>    
-</head>    
-<body>        
-    This <br \> is Text 
-    <!-- ใช้ขึ้นบรรทัดใหม่ -->
-    <h1>This is a Test</h1>
-    <h1 color="red">This is a Heading</h1>
-    <img src="cat.png" /> 
-    <!-- ใส่รูป -->
-    <p>This is a paragraph.</p>    
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+        <body>
+            <h1>Heading 1</h1> 
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p><b>This</b>
+                <!-- ตัวหนา -->
+                <i>paragraph</i>
+                <!-- เอียง -->
+                contain<sub>ล่าง</sub>
+                 <!--ราก  -->
+                a lot of link<sup>บน</sup>
+                <!-- ยกกำลัง -->
+                in the source code, <br /> 
+                but the browser ignores it.
+                <!-- แท็บลงมาหนึ่งบรรทัด -->
+                <hr \>
+                <!-- ขีดเส้น -->
+            </p>
+            
+            <ul>  <li>Coffee</li>  <li>Tea</li>  <li>Milk</li></ul>
+            <!-- ลิสรายการแบบจุด -->
+            <ol>  <li>Coffee</li>  <li>Tea</li>  <li>Milk</li></ol>
+            <!-- ลิสรายการแบบตัวเลข -->
+            <dl>  <dt>Coffee</dt>  <dd>- black hot drink</dd>  
+                <dt>Milk</dt>      <dd>- white cold drink</dd></dl>
+            <!-- หัวข้อและหัวข้อย่อย -->
+
+            <a href="https://www.google.com/" target="_blank">Visit Google</a><br \>
+            <!-- ใส่ลิงค์เว็บแล้ววาปไปโดยเปิดแท็บใหม่ -->
+            <a href="https://www.google.com/" target="_self">Visit Google</a>
+            <!-- ใส่ลิงค์เว็บแล้ววาปไปในหน้าแท็บเดิม (ถ้าไม่เขียน Target จะเด้งอันนี้) -->
+            <figure><img src="cat.png" alt="แคปชัน"style="width:300px; height: 200px;px;" title="แคปชัน" /><br /><figcaption>แคปชัน</figcaption><figure></figure>
+            <!-- รูป -->
+            
+        <table>  
+            <tr>    
+                <th>Company</th>    
+                <th>Contact</th>    
+                <th>Country</th>  
+            </tr>
+            <tr>    
+                <td>Alfreds Futterkiste</td>    
+                <td>Maria Anders</td>    
+                <td>Germany</td>  
+            </tr>
+        </table>
+        <hr>
+        <table>
+                <tr>
+                    <th></th>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Tickets sold:</th>
+                <td>120</td>
+                <td>135</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Total sales:</th>
+                <td>$600</td>
+                <td>$675</td>
+            </tr>
+
+        </table>
+        <hr>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>&nbsp;10am</th>
+                <th>&nbsp;11am</th>
+                <th>&nbsp;12am</th>
+            </tr>
+            <tr>
+                <th>&nbsp;Monday</th>
+                <td colspan="2">&nbsp;Geography</td>
+                <!-- ควบแถวแนวนอน -->
+                <td>&nbsp;Math</td>
+                <td>&nbsp;Art</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </tr>
+            <tr>
+                <th>6pm - 7pm</th>
+                <td rowspan="2">Movie</td>
+                <!-- ควบแถวแนวตั้ง -->
+                <td>Comedy</td>
+                <td>News</td>
+            </tr>
+            <tr>
+                <th>7pm - 8pm</th>
+                <td>Sport</td>
+                <td>Current Affairs</td>
+            </tr>
+        </table>
+            <hr>
+
+            <form>
+                <label for="fname">ชื่อ </label> <input type="text" id="fname" name="fname"><br \>
+                <label for="lname">สกุล </label> <input type="text" id="lname" name="lname">
+            </form>
+            <!-- ชื่อและนามสกุล id ห้ามซ้ำ -->
+
+            <label for="start">วัน/เดือน/ปีเกิด </label>
+        
+            <input type="date" id="start" name="trip-start" value="dd-mm-yyyy" min="1998-01-01" max="2023-12-31">
+
+            <form>
+                <label for="age">อายุ </label> <input type="text" id="age" name="age">
+            </form>
+
+            <form>
+                <label for="age">เพศ </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                        <label for="sex">ผู้ชาย</label> 
+                    <input type="radio" id="female" name="gender" value="female">  
+                        <label for="sex">ผู้หญิง</label>  
+            </form>
+            <!-- ไว้ทำแนวเพลง -->
+
+            <form>
+                <label for="picture">รูป </label>
+                <input type="file" id="myfile" name="myfile">
+            </form>
+
+            <form>
+                <label for="address">ที่อยู่ </label>
+                <textarea rows="4" cols="40"></textarea>
+            </form>
+
+            <label for="color">สีที่ชอบ</label>
+            <select name="color" id="color">
+                <option value="red">สีแดง</option>
+                <option value="blue">สีน้ำเงิน</option>
+                <option value="green">สีเขียว</option>
+                <option value="yellow">สีเหลือง</option>
+            </select>
+            
+            <form>
+                <label for="music">เพลงที่ชอบ </label>
+                    <input type="radio" id="forlife" name="music" value="forlife">
+                        <label for="music">เพื่อชีวิต</label> 
+                    <input type="radio" id="lookthong" name="music" value="lookthong">  
+                        <label for="music">ลูกทุ่ง</label>  
+                    <input type="radio" id="other" name="music" value="other">  
+                        <label for="music">อื่นๆ</label>      
+            </form>
+
+            <form>
+                <input type="checkbox" id="check" name="check" value="check">
+                  <label for="check"> ยินยอมให้ข้อมูล</label>
+            </form>
+
+            <input type="reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit">
+
+            <hr>
+
+    
+        </body>
 </html>
 
 
