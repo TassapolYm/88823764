@@ -1,0 +1,53 @@
+h1{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 0, 0)
+}
+
+h2{
+    color:  rgb(0, 5, 105)
+}
+
+#myh1 {
+    font-size: 100px;
+}
+
+.head{
+    margin: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    font-size: 80px;
+    color:rgb(127, 127, 127)
+}
+
+.center{
+    text-align: center;
+}
+
+.mybox{
+    overflow: hidden;
+    display: inline;
+    border-top-color: black;
+    background-color: green;
+    border:2px solid;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+.mybox2{
+    
+    border-color: black;
+    background-color: aqua;
+}
+
+/*เปลี่ยนสีตอนชี้*/
+.mybox:hover{
+    background-color: yellow;
+}
+
+.mybox2:hover{
+    background-color: yellow;
+}
+
